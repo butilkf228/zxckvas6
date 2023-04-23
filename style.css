@@ -3,8 +3,10 @@
   --secondary-text-color: #757575;
   --logo-color: #000000;
   --accent-color: #2196f3;
-  --background-color: #fff;
+  --background-color: #ffffff;
   --hero-background-color: #2f303a;
+  --background-color-transparent: #ffffff60;
+  --name-60-color:#757575;
 }
 
 body {
@@ -14,6 +16,12 @@ body {
 
 .logo {
   color: var(--accent-color);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
 }
 
 .logo > span {
@@ -59,7 +67,8 @@ ul {
 }
 
 .nav-link:hover,
-.nav-link:focus .contacts-link:hover,
+.nav-link:focus, 
+.contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
 }
@@ -74,7 +83,8 @@ h1 {
 }
 
 .hero {
-  color: var(--hero-background-color);
+  background-color: var(--hero-background-color);
+  color: var(--background-color);
 }
 
 .hero-button {
@@ -86,13 +96,45 @@ h1 {
 
   color: var(--background-color);
   background-color: var(--accent-color);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 footer {
-    color: #fff;
-  background-color: #2f303a;
-  
+  background-color: var(--hero-background-color);
+  color: var(--background-color);
 }
-footer > h2 >span {
-    color:#2196f3
+
+footer > h2 > span {
+  color: var(--accent-color);
+}
+
+footer > h2 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+}
+
+footer > :last-child, footer > :nth-child(3) {
+  color: var(--background-color-transparent);
+}
+
+.qwer > h2, .qwer > h3 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.name-60 {
+  color: var(--name-60-color);
 }
